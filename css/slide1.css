@@ -1,0 +1,47 @@
+*{margin:0; padding:0;}
+li{list-style: none;}
+a{text-decoration: none; color: black;}
+.container{width: 1200px; margin: 0 auto; }
+/* 유형1 슬라이드 */
+#topBanner, #leftBanner, #faeBanner{
+    overflow:hidden;     /* 옆으로 넘치지 않게 '오버플로우 히든'으로 막는다 */
+    height: 350px;     /* 위로 올릴 경우 사용하는 수  */
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1em;
+}
+
+/* 유형2 */
+#leftBanner ul{
+    display: flex;
+    width: 10000px;
+    margin-left: 0;
+    
+}
+
+/* li img, li a{display: block;} */
+li{font-size: 0;}
+
+/* ★★★★유형3★★★★ */
+
+#fadeBanner{
+    position: relative;
+}
+#fadeBanner li{
+    position: absolute;
+    left: 0;
+    top : 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+}
+#fadeBanner li.on{
+    z-index:1;
+    opacity: 1;
+    visibility: visible;
+} 
+/* 포지션이 있어야만 Z레벨이 먹힘.
+Z레벨이 있을 경우 1순위이고, 모두 다 Z레벨이 있을 경우 숫자 높은게 1등 */

@@ -1,0 +1,28 @@
+*{margin:0; padding:0;}
+li{list-style: none;}
+a{text-decoration: none; color: black;}
+.container{width: 1200px; margin: 0;}
+/* 슬라이드 */
+#mainBanner{
+    overflow:hidden;     /* 옆으로 넘치지 않게 '오버플로우 히든'으로 막는다 */
+    height: 350px;     /* 위로 올릴 경우 사용하는 수  */
+}
+#mainBanner ul{
+    /* width:10000px;
+    display: flex;
+    margin-left: -1200px; */
+    margin-top: -350px;
+    
+}
+#mainBanner li{
+ 
+}
+#mainBanner li a{
+    display: block;
+
+}
+#mainBanner li img{
+    display: block;
+}
+
+
